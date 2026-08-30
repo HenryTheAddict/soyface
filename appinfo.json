@@ -1,0 +1,39 @@
+{
+    "displayName": "Soyface",
+    "uuid": "38a0fc3e-cc7d-4d5f-b5fd-75caae2c3ac2",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "capabilities": [
+        "configurable"
+    ],
+    "targetPlatforms": [
+        "emery",
+        "basalt",
+        "chalk",
+        "gabbro"
+    ],
+    "watchapp": {
+        "watchface": true
+    },
+    "resources": {
+        "media": []
+    },
+    "name": "soyface",
+    "shortName": "Soyface",
+    "longName": "Soyface",
+    "versionLabel": "1.0.0",
+    "companyName": "henry",
+    "messageKeys": {},
+    "appKeys": {
+        "brandText": 0,
+        "weatherLabel": 1,
+        "showInfo": 2,
+        "bigTime": 3,
+        "weatherTemp": 4,
+        "time24h": 5,
+        "animations": 6,
+        "fruitPuns": 7,
+        "tempUnit": 8,
+        "buzz": 9
+    }
+}

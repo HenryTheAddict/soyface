@@ -1,0 +1,40 @@
+# Pebble Build Artifact, its basically a diddy computer
+build/
+*.pbw
+*.elf
+*.bin
+.lock-waf*
+.lock-wscript
+
+# Pebble SDK & Local Reference Dirs, it doesnt even matter if this works or not im lazy
+.sdk/
+.ref/
+
+# Node / JS Dependencies & Logs wait is pebble even js? ? ? ? it uses c dont be dumb. 
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python Cache & Bytecode or maybe its not python but it looks like python 
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# macOS / OS Metadata who knows if this works on mac btw 
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Editor & IDE Files, im pretty sure this is unneccessary because who tf uses an ide for a pebble watch, use cloudpebble instead you caveman, lmao im a hypocrite since i use a ide
+.vscode/
+.idea/ 
+*.swp
+*.swo
+*~
+*.bak
