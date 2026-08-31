@@ -163,6 +163,23 @@ static void window_unload(Window *window) {
   ui_deinit(window);
 }
 
+static void unobstructed_will_change(GRect final_unobstructed_screen_area,
+                                      void *context) {
+  (void)context;
+  (void)final_unobstructed_screen_area;
+}
+
+static void unobstructed_change(AnimationProgress progress, void *context) {
+  (void)progress;
+  (void)context;
+  ui_refresh();
+}
+
+static void unobstructed_did_change(void *context) {
+  (void)context;
+  ui_refresh();
+}
+
 static void init(void) {
   strcpy(soy_state.brand, BRAND_DEFAULT);
   soy_state.big_time = false;
@@ -235,6 +252,12 @@ static void init(void) {
 
   tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
   battery_state_service_subscribe(battery_handler);
+  unobstructed_area_service_subscribe((UnobstructedAreaHandlers){
+                                          .will_change = unobstructed_will_change,
+                                          .change = unobstructed_change,
+                                          .did_change = unobstructed_did_change,
+                                      },
+                                      NULL);
 #if defined(PBL_PLATFORM_GABBRO)
   connection_service_subscribe((ConnectionHandlers){
       .pebble_app_connection_handler = bluetooth_handler,
@@ -246,6 +269,7 @@ static void init(void) {
 }
 
 static void deinit(void) {
+  unobstructed_area_service_unsubscribe();
   tick_timer_service_unsubscribe();
   battery_state_service_unsubscribe();
   app_message_deregister_callbacks();
