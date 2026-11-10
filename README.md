@@ -1,6 +1,6 @@
 # Soyface
 
-A PebbleOS watchface for four platforms styled as a Soylent bottle, the soyboys and soydevs and soykiddos and soygals and everyone in between can enjoy this beautiful watchface, i made this cause i was talking with my friend burger 10 thousand, and i wanted to make a watchface for him, as he is a big fan of soy. also to make fun of him for it, its a win win situation am i right. also check the settings on the phone, he is there. (burger 10 thousand), soylent is the nectar of the gods. you should try it.
+A PebbleOS watchface for four platforms styled as a Soylent bottle, the soyboys and soydevs and soykiddos and soygals and everyone in between can enjoy this beautiful watchface, i made this cause i was talking with my friend burger 10 thousand (he's neiche ball knowledge ebk I'm totally not adding this for the green github square to look more active...), and i wanted to make a watchface for him, as he is a big fan of soy. also to make fun of him for it, its a win win situation am i right. also check the settings on the phone, he is there. (burger 10 thousand), soylent is the nectar of the gods. you should try it.
 
 pretty cool huh :P
 
